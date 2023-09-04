@@ -175,7 +175,7 @@ trait Encryptable
 
         if ($this->key === null) {
             if (!config('simple-encryptable.key')) {
-                throw new \Exception('The .env value MODEL_ENCRYPT_KEY has to be set');
+                throw new \Exception('The .env value ENCRYPTION_KEY has to be set');
             }
             $this->key = substr(hash('sha256', config('simple-encryptable.key')), 0, 16);
         }
