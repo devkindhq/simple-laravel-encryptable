@@ -23,6 +23,19 @@ php artisan vendor:publish --provider="Devkind\SimpleLaravelEncryptable\SimpleLa
 ```
 
 
+## Environment variables
+
+Here are the values which can be modified to tweek the encryption
+
+N.B `ENCRYPTION_IV` is the important field that has to be set before using the package.
+
+```
+ENCRYPTION_KEY=
+ENCRYPTION_CIPHER=
+ENCRYPTION_IV=
+ENCRYPTION_PREFIX=XXX
+
+```
 
 ## Usage
 
