@@ -27,7 +27,7 @@ return [
     | will not be safe. Please do this before deploying an application!
     |
     */
-    'cipher' => env('ENCRYPTION_CIPHER', config('app.cipher')),
+    'cipher' => env('ENCRYPTION_CIPHER', config('app.cipher', 'AES-256-CBC')),
 
     /*
     |--------------------------------------------------------------------------
