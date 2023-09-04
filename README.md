@@ -1,4 +1,7 @@
-# Very short description of the package
+# Simple Laravel Encryptable
+
+The Laravel Encryptable Attributes package provides seamless encryption and decryption of data stored in your database using Eloquent models. With this package, all values are automatically encrypted before storage and decrypted when queried, ensuring data security at rest while preserving accessibility.
+
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/devkindhq/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkindhq/simple-laravel-encryptable)
 [![Total Downloads](https://img.shields.io/packagist/dt/devkindhq/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkindhq/simple-laravel-encryptable)
@@ -23,7 +26,7 @@ php artisan vendor:publish --provider="Devkind\SimpleLaravelEncryptable\SimpleLa
 
 ## Usage
 
-To use the package, just add the Encryptable cast to all model attributes you want to anonymize.
+To use the package, just add the Encryptable trait to all model and the db column names in `$encryptable` you want to anonymize.
 
 ```php
 
