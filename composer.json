@@ -1,12 +1,12 @@
 {
-    "name": "devkind/simple-laravel-encryptable",
+    "name": "devkindhq/simple-laravel-encryptable",
     "description": "",
     "keywords": [
         "devkind",
         "simple-encryptable",
         "simple-laravel-encryptable"
     ],
-    "homepage": "https://github.com/devkind/simple-laravel-encryptable",
+    "homepage": "https://github.com/devkindhq/simple-laravel-encryptable",
     "license": "MIT",
     "type": "library",
     "authors": [

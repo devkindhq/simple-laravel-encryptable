@@ -1,8 +1,8 @@
 # Very short description of the package
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/devkind/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkind/simple-laravel-encryptable)
-[![Total Downloads](https://img.shields.io/packagist/dt/devkind/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkind/simple-laravel-encryptable)
-![GitHub Actions](https://github.com/devkind/simple-laravel-encryptable/actions/workflows/main.yml/badge.svg)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/devkindhq/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkindhq/simple-laravel-encryptable)
+[![Total Downloads](https://img.shields.io/packagist/dt/devkindhq/simple-laravel-encryptable.svg?style=flat-square)](https://packagist.org/packages/devkindhq/simple-laravel-encryptable)
+![GitHub Actions](https://github.com/devkindhq/simple-laravel-encryptable/actions/workflows/main.yml/badge.svg)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -11,7 +11,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require devkind/simple-laravel-encryptable
+composer require devkindhq/simple-laravel-encryptable
 ```
 
 You can publish the config file with:
