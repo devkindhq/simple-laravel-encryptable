@@ -14,7 +14,7 @@ This is where your description should go. Try and limit it to a paragraph or two
 You can install the package via composer:
 
 ```bash
-composer require devkindhq/simple-laravel-encryptable
+composer require devkind/simple-laravel-encryptable
 ```
 
 You can publish the config file with:
@@ -103,7 +103,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email saadbhutto@ymail.com instead of using the issue tracker.
+If you discover any security related issues, please email backend@devkind.com instead of using the issue tracker.
 
 ## Credits
 
