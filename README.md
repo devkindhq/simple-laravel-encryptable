@@ -14,10 +14,18 @@ You can install the package via composer:
 composer require devkind/simple-laravel-encryptable
 ```
 
+You can publish the config file with:
+```bash
+php artisan vendor:publish --provider="Devkind\SimpleLaravelEncryptable\SimpleLaravelEncryptableServiceProvider" --tag="simple-encryptable"
+```
+
+
+
 ## Usage
 
-```php
 To use the package, just add the Encryptable cast to all model attributes you want to anonymize.
+
+```php
 
 <?php
 
@@ -37,6 +45,31 @@ class User extends Model
 }
 
 ```
+
+Once done, all values will be encrypted before being stored in the database, and decrypted when querying them via Eloquent.
+
+
+
+### Manually encrypt via Facade
+
+``` php
+use Devkind\SimpleLaravelEncryptable\SimpleEncryptable;
+
+$value = "your-decrypted-value";
+
+$encrypted = SimpleEncryptable::encrypt($value); // returns the encrypted value
+```
+
+### Manually decrypt via Facade
+
+``` php
+use Devkind\SimpleLaravelEncryptable\SimpleEncryptable;
+
+$encrypted = "your-encrypted-value";
+
+$value = SimpleEncryptable::decrypt($value); // returns the decrypted value
+```
+
 
 ### Testing
 
