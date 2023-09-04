@@ -168,7 +168,7 @@ trait Encryptable
      */
     public function getKey()
     {
-        if ($this->keyattribute !== null) {
+        if (property_exists($this, 'keyattribute') && $this->keyattribute !== null) {
             throw_if(is_null($this->{$this->keyattribute}));
             $this->key = substr(hash('sha256', $this->{$this->keyattribute}), 0, 16);
         }

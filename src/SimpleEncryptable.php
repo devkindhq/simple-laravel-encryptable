@@ -2,8 +2,20 @@
 
 namespace Devkind\SimpleLaravelEncryptable;
 
-class SimpleEncryptable
-{
-    use Encryptable;
+use Illuminate\Support\Facades\Facade;
 
+/**
+ * @see \Devkind\SimpleLaravelEncryptable\Skeleton\SkeletonClass
+ */
+class SimpleEncryptable extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'simple-encryptable';
+    }
 }

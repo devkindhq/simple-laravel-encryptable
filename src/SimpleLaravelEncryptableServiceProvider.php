@@ -30,7 +30,7 @@ class SimpleLaravelEncryptableServiceProvider extends ServiceProvider
 
         // Register the main class to use with the facade
         $this->app->singleton('simple-encryptable', function () {
-            return new SimpleEncryptable;
+            return new SimpleEncryptableImpl;
         });
     }
 
