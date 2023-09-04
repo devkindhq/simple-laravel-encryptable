@@ -3,6 +3,7 @@
     "description": "",
     "keywords": [
         "devkind",
+        "simple-encryptable",
         "simple-laravel-encryptable"
     ],
     "homepage": "https://github.com/devkind/simple-laravel-encryptable",

@@ -17,7 +17,25 @@ composer require devkind/simple-laravel-encryptable
 ## Usage
 
 ```php
-// Usage description here
+To use the package, just add the Encryptable cast to all model attributes you want to anonymize.
+
+<?php
+
+namespace App\Models;
+
+use Devkind\SimpleLaravelEncryptable\Encryptable;
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model
+{
+    use Encryptable;
+
+    protected $encryptable = [
+        'password',
+    ];
+
+}
+
 ```
 
 ### Testing
@@ -40,7 +58,8 @@ If you discover any security related issues, please email saadbhutto@ymail.com i
 
 ## Credits
 
--   [Saad Bhutto](https://github.com/devkind)
+-   [Devkind](https://github.com/devkind)
+-   [Saad Bhutto](https://github.com/saad-bhutto)
 -   [All Contributors](../../contributors)
 
 ## License
